@@ -1,0 +1,1069 @@
+<!doctype html>
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us">
+<!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<title>Documentation - Created by Cocoon</title>
+	<meta name="description" content="Documentation">
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,700,300,600,800,400" rel="stylesheet" type="text/css">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<script src="assets/js/jquery.js"></script>
+	<!--<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	<script>document.createElement('section');var duration='450',easing='easeOutExpo';</script>-->
+	<script src="assets/js/script.js"></script>
+</head>
+
+<body class="documenter-project-documenter-v20">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#general-information">General information</a></li>
+			<li><a href="#demo-installation">Demo installation</a></li>
+			<li><a href="#existing-installations">Existing installations</a></li>
+			<li><a href="#theme-settings">Theme settings</a></li>
+			<li><a href="#theme-structure">Theme structure</a></li>
+			<li><a href="#main-menu">Main menu</a></li>
+			<li><a href="#creating-content">Creating content</a></li>
+			<li><a href="#live-customizer">Live Customizer</a></li>
+			<li><a href="#formbuilder">Form Builder</a></li>
+			<li><a href="#custom-block-types">Custom block types</a></li>
+			<li><a href="#course-payment-setup">Course Payment Setup</a></li>
+			<li><a href="#further-customization">Further Customization</a></li>
+			<li><a href="#changelog">Changelog</a></li>
+			<li><a href="#further-support">Further support</a></li>
+
+		</ul>
+		<div id="documenter_copyright">&copy; Cocoon
+		</div>
+	</div>
+	<div id="documenter_content">
+		<section id="documenter_cover">
+			<div class="huge">
+				<h1 class="huge">Documentation</h1>
+				<h2 class="huge">Let's get started.</h2>
+				<div id="documenter_buttons">
+
+				</div>
+			</div>
+			<div class="huge-below">
+				<p>Thank you for your purchase. This documentation file will serve as a general introduction to <i class="theme-name">Edumy</i>, covering topics such as theme installation and configuration, content creation, and general how-tos.</p>
+				<p>Enjoy the theme!</p>
+				<p>Created by Cocoon</p>
+				<ul>
+					<li><strong>theme:</strong> Edumy</li>
+					<li><strong>platform:</strong> Moodle</li>
+					<li><strong>updated:</strong> October 2021</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="general-information">
+			<div class="page-header">
+				<h3>General information</h3>
+				<hr>
+			</div>
+			<h4>About Edumy</h4>
+			<p>Edumy is a modern education and LMS Moodle theme for educational institutions and establishments. With a pixel-perfect design and top notch support as standard, Edumy is the perfect theme for your next Moodle project.</p>
+
+			<p>Edumy is fully-responsive, standards compliant and easy to customize.</p>
+			<hr>
+			<h4>Your purchase</h4>
+			<p>This documentation file will serve as a general introduction to Edumy, providing instructions on topics such as installation, theme configuration, content creation, custom modifications and general how-tos.</p>
+
+			<p>Edumy for Moodle has been built by <a href="https://createdbycocoon.com/moodle-themes"><i>Created by Cocoon</i></a>, a developer of premium CMS themes and provider of forward-thinking digital solutions.</p>
+
+			<p>The theme's download package contains the following directories:</p>
+
+			<ul>
+				<li><b>Documentation -</b> Help files for theme installation, use and customization</li>
+				<li><b>Demo Installation -</b> The full Moodle installation package, complete with Edumy and all blocks and plugins installed and pre-configured</li>
+				<li><b>Existing Installations -</b> The packages required to install Edumy on an existing Moodle website</li>
+				<li><b>Licensing -</b> Licenses and legal information pertaining to the theme's use</li>
+			</ul>
+
+			<div class="alert alert-warning">If you are creating a <b>new Moodle site</b>, we highly recommend that you install Edumy using our Demo Installation package and instructions. If you have <b>an existing Moodle site</b>, please follow the
+				'Existing Installation' instructions.</div>
+			<br>
+			<div class="alert alert-info"><b>Please note</b> that demo/sample data is only installed when using the Demo Installation package. As such, if you are using the Existing Installation instructions, please refer to the 'Creating Content' section
+				below for guidance on how to create content using Edumy.</div>
+		</section>
+		<section id="demo-installation">
+			<div class="page-header">
+				<h3>Demo installation</h3>
+				<hr class="notop">
+			</div>
+			<p>The following instructions will show you how to install a fresh instance of Moodle, complete with Edumy installed, all modules pre-configured, and extensive demo content with placeholder images.</p>
+			<h4><b>1.</b> Create database</h4>
+			<p>Unless you plan on using an existing database, you must create a new database for your Moodle installation.</p>
+			<p>The database can be named however you wish. The database can be created via phpMyAdmin (as shown below), or via another database manager such as cPanel or Parallels Plesk.</p>
+			<p>(You may also need to create a new database user, unless you plan on using an existing one.)</p>
+			<p> <img alt="" src="assets/images/pix/di-1.png" style="width:300px;"></p>
+			<p><b>Immediately proceed to step 2, below.</b></p>
+			<br>
+			<h4><b>2.</b> Populate database</h4>
+			<p>Import the SQL file, named cocoon_edumy.sql (located in the 'Demo Installation' folder in your theme download package), into your new database. This can be accomplished via phpMyAdmin, as shown below. </p>
+			<p>Ensure that your server is configured to allow uploads of at least 5.4 MB, so that the SQL file can be fully imported.</p>
+			<p> <img alt="" src="assets/images/pix/di-2.png" style="width:300px;"></p>
+			<p><b>Immediately proceed to step 3, below.</b></p>
+			<br>
+			<h4><b>3.</b> Upload files</h4>
+			<p>Upload the <b>demo_files.zip</b> archive (located in the <i>Demo Installation</i> folder) to your web server, and extract it using either cPanel, another administration interface, or command line.</p>
+			<p>Alternatively, you can manually upload the entire contents of the uncompressed <b>demo_files</b> folder to your web server. Ensure that all hidden files are also transferred, as these may be hidden in your computer's file browser. We
+				recommend using an FTP client, such as <a target="_blank" href="https://filezilla-project.org/">FileZilla</a>.</p>
+			<p><b>Immediately proceed to step 4, below.</b></p>
+			<br>
+			<h4><b>4.</b> Upload moodledata</h4>
+			<p>Upload the <b>moodledata.zip</b> archive (located in the <i>Demo Installation</i> folder) to your web server, <b>outside</b> your web root. Moodle requires that the moodledata folder is not publicly accessible.
+			<p>
+			<p>Once uploaded, extract the archive using either cPanel, another administration interface, or command line.</p>
+			<p>Alternatively, you can manually upload the entire contents of the uncompressed <b>moodledata</b> folder to your web server. Ensure that all hidden files are also transferred, as these may be hidden in your computer's file browser. We
+				recommend using an FTP client, such as <a target="_blank" href="https://filezilla-project.org/">FileZilla</a>.</p>
+			<p>Your web server should have read-write permissions to the moodledata directory. For further instructions, please visit <a target="_blank"
+					href="https://docs.moodle.org/38/en/Installing_Moodle#Create_the_.28moodledata.29_data_directory">Moodle.org</a>.</p>
+			<p><b>Immediately proceed to step 5, below.</b></p>
+			<br>
+			<h4><b>5.</b> Configure config.php</h4>
+			<p>You must now configure Moodle's <b>config.php</b> file to reflect your new database credentials and moodledata directory location, so that Moodle can connect to the database.</p>
+			<p>It is mandatory to complete all of the following steps, in order for your website to work correctly.</p>
+			<ol>
+				<li>Open the <code>config.php</code> file located in the Moodle root on your web server.</li><br>
+				<li>On lines 10 to 12, edit the <b>database name, user, and password</b> to match the new database credentials you set up in Step 1.</li><br>
+				<li>Ensure that the database prefix remains as "cocoon_".</li><br>
+				<li>You may also need to edit the database port and host to match that of your server, and the database collation to match that of the new database you created in Step 1.</li><br>
+				<li>On line 20, change the website root to your website URL, or your localhost address (e.g. http://localhost/moodle, or http://localhost:8888/moodle)
+					<br><br>
+					<div class="alert alert-warning">This step is important. If you specify the incorrect web address your website <b>will not</b> display correctly.</div>
+				</li><br>
+				<li>On line 21, change the "dataroot" to match the location of the moodledata directory you uploaded in Step 4. This path should be relative to your server root.</li><br>
+				<li>On line 24, adjust the "directorypermissions" to the directory permissions set for your moodledata directory (in Step 4). By default, these are 0777. However, they may also be 0775 or 0755, depending on your server configuration. For
+					further guidance on setting the appropriate permissions, visit <a target="_blank" href="https://docs.moodle.org/38/en/Installing_Moodle#Create_the_.28moodledata.29_data_directory">Moodle.org</a></li><br>
+			</ol>
+			<p> <img alt="" src="assets/images/pix/di-3.png" style="width:450px;"></p><br>
+			<p><b>Immediately proceed to step 6, below.</b></p>
+			<br>
+			<h4><b>6.</b> Login</h4>
+			<p>Your Edumy demo installation is now complete. You can now login to your new Edumy website with the following administrator credentials.</p>
+			<p>&rarr; Navigate to <i><b>{yoursite.com}</b>/login/index.php</i> to login directly.</p>
+			<div class="alert alert-info"><span><b>USERNAME:</b> admin<br><b>PASSWORD:</b> admin123</span></div><br>
+			<p><b>Immediately proceed to step 7, below.</b></p>
+			<br>
+			<h4><b>7.</b> Purge the Moodle cache</h4>
+			<p>After logging in, navigate directly to <i><b>{yoursite.com}</b>/admin/purgecaches.php</i> via your web browser's address bar and click the 'Purge all caches' button.</p>
+			<p>Wait for the page to refresh and reload completely. Once the page has refreshed and loaded completely, the caches have been succesfully purged.</p>
+			<p>This process may take several minutes.</p><br>
+			<p><b>Immediately proceed to step 8, below.</b></p>
+			<br>
+			<h4><b>8.</b> Complete!</h4>
+			<p>Your installation of Edumy is officially complete! Happy site building! (Please don't forget to change the administrator password first.)</p>
+		</section>
+		<section id="existing-installations">
+			<div class="page-header">
+				<h3>Existing installations</h3>
+				<hr class="notop">
+			</div>
+			<p>Edumy can be installed on existing Moodle installations, and the process is quick and easy. You'll be up and running in no time.</p>
+			<div class="alert alert-danger">Ensure that you have a fresh, working backup of your existing Moodle instance (files <b>and</b> database) before proceeding.</div>
+			<h4>1. Upload the theme</b></h4>
+			<p>The standalone theme is located in the 'Existing Installations/theme' folder.</p>
+			<p>&rarr; Unzip the edumy.zip archive, and upload the extracted folder to the <code>/theme</code> directory in your Moodle root.</p>
+			<p>You should now have the standalone Edumy theme at this location on your web server: <code>/theme/edumy</code></p>
+			<p><b>Immediately proceed to step 2, below.</b></p>
+			<br>
+			<h4>2. Upload required blocks</b></h4>
+			<p>Edumy ships with over 50 custom blocks to help you create feature-rich pages on your Moodle site. It is recommended that all custom blocks are installed.</p>
+			<p>The blocks you must install are located in the 'Existing Installations/blocks' folder.</p>
+			<p>Upload the blocks to your Moodle blocks directory, located at <code>/blocks</code> in your Moodle root.</p>
+			<p><b>Immediately proceed to step 3, below.</b></p>
+			<br>
+			<h4>3. Upload recommended plugins</b></h4>
+			<p>The following third-party plugins are recommended:</p>
+			<ul>
+				<li><a href="https://moodle.org/plugins/local_contact" target="_blank">Contact Form</a></li>
+				<li><a href="https://moodle.org/plugins/report_coursestats" target="_blank">Courses Usage Statistics</a></li>
+				<li><a href="https://moodle.org/plugins/report_overviewstats" target="_blank">Overview Statistics</a></li>
+			</ul>
+			<p>The recommended plugins are located in the 'Existing Installations/local' folder.</p>
+			<p>Upload the plugins to your Moodle plugins directory, located at <code>/local</code> in your Moodle root.</p>
+			<p><b>Immediately proceed to step 4, below.</b></p>
+			<br>
+			<h4>4. Installation</b></h4>
+			<p>After following the steps above, you must install the uploaded theme, blocks, and plugins:</p>
+			<ol>
+				<li>Log into your Moodle site (as an administrator), and go to <b>Site administration > Notifications</b> (*your_moodle_address*<i>/admin/index.php</i>)</li>
+				<li>There should be 57 new installations pending your attention. Scroll to the bottom of the page and click "Upgrade Moodle Database now".</li>
+				<li>Wait for Moodle to install the new plugins. This might take several minutes.</li>
+				<li>Follow the on-screen instructions to complete the installation.</li>
+			</ol>
+			<div class="alert alert-info">You may be prompted to configure new settings during the installation process. You can safely ignore this for now, and proceed by clicking "Continue" at the bottom of the page. You will be able to configure these
+				settings at a later time.</div>
+			<p>Upon successful installation, you will be taken to the Site administration > Notifications page.</p>
+			<p><b>Immediately proceed to step 5, below.</b></p>
+			<br>
+			<h4>5. Activation</b></h4>
+			<p>Everything you need to build or extend your Moodle site with Edumy is now installed.</p>
+			<p>But first, let's activate your new theme:</p>
+			<p>&rarr; Navigate to <b>Site administration > Appearance > Themes > Theme selector</b>, and change the default theme to <b>Edumy</b>.</p>
+
+			<p>Upon successful activation, a "New theme saved" page will be displayed. Click <b>Continue</b>.</p>
+			<p><b>Immediately proceed to <a href="#theme-settings">Theme Settings</a>, below.</b></p>
+
+		</section>
+		<section id="theme-settings">
+			<div class="page-header">
+				<h3>Theme settings</h3>
+				<hr class="notop">
+			</div>
+			<p>Edumy's Theme Settings are important to your website's functionality, as they dictate how the theme will look and behave.</p>
+			<p>&rarr; Navigate to <b>Site administration > Appearance > Themes > Edumy</b></p>
+			<br>
+			<h4>General settings</h4>
+			<p>The <i>General settings</i> panel allows you to configure styles for the Moodle blog and course listing pages.</p>
+			<p><img src="assets/images/pix/ts-1.png"></p>
+			<br>
+			<h4>Header settings</h4>
+			<p>The <i>Header settings</i> panel provides settings for configuring your website header. It's important to complete every field. Please note that the fields displayed on your website frontend vary depending on the chosen header style.</p>
+			<p><img src="assets/images/pix/ts-2.png"></p>
+			<p><img src="assets/images/pix/ts-3.png"></p>
+			<br>
+			<h4>Footer settings</h4>
+			<p>The <i>Footer settings</i> panel provides settings for configuring your website footer. It's important to complete every field. Please note that the fields displayed on your website frontend vary depending on the chosen footer style.</p>
+			<p><img src="assets/images/pix/ts-4.png"></p>
+			<p><img src="assets/images/pix/ts-5.png"></p>
+			<p><img src="assets/images/pix/ts-6.png"></p>
+			<p><img src="assets/images/pix/ts-7.png"></p>
+			<p><img src="assets/images/pix/ts-8.png"></p>
+			<p><img src="assets/images/pix/ts-9.png"></p>
+			<br>
+			<h4>Social settings</h4>
+			<p>The <i>Social settings</i> panel provides settings for configuring the social profile links for your website.</p>
+			<p><img src="assets/images/pix/ts-10.png"></p>
+			<br>
+		</section>
+		<section id="theme-structure">
+			<div class="page-header">
+				<h3>Theme structure</h3>
+				<hr class="notop">
+			</div>
+			<p>This section will provide further guidance on how Edumy works, and how content should be managed.</p>
+			<h4>Pages</h4>
+			<p>Edumy includes styling for all common areas of a typical Moodle installation, including (but not limited to):</p>
+			<ul>
+				<li>Front page</li>
+				<li>Custom Pages (Activities)</li>
+				<li>Course categories</li>
+				<li>Single courses (and sub-pages like Participants)</li>
+				<li>Calendar</li>
+				<li>Login and Email-based Self Registration</li>
+				<li>Blogs</li>
+				<li>Dashboard (Messages, Profile, Settings, etc)</li>
+			</ul>
+			<p>These styles are automatically applied on activation of the theme.</p>
+			<p>However, there are many more possibilities with Edumy.</p>
+			<p>One of Edumy's greatest features is its intuitive use of custom blocks, which allow you to create feature-rich pages anywhere on your Moodle site.</p>
+			<p>You can assign any of the custom blocks below to one of Edumy's included regions:</p>
+			<h4>Regions</h4>
+			<ul>
+				<li>Fullwidth top</li>
+				<li>Fullwidth bottom</li>
+				<li>Above content</li>
+				<li>Below content</li>
+				<li>Sidebar left</li>
+				<li>Sidebar right</li>
+			</ul>
+			<p>Please note that certain blocks are best-placed in the fullwidth regions, and others in the sidebar regions.</p>
+
+			<h4>Blocks</h4>
+			<p>Edumy ships with over 50 custom blocks, which can be assigned to any region within the theme.</p>
+			<p>Custom blocks have [Cocoon] in the title, for easy recognition:</p>
+			<ul>
+				<li><b>[Cocoon] About (Text 2 Columns)</b> - Two columns of simple text.</li>
+				<li><b>[Cocoon] About (Text with Image)</b> - One column of text with an image.</li>
+				<li><b>[Cocoon] Action Panels</b> - Two call-to-action panels.</li>
+				<li><b>[Cocoon] Contact Form</b> - A contact form with a Google map.</li>
+				<li><b>[Cocoon] Course Details</b> - For use on single course pages: details about a course.</li>
+				<li><b>[Cocoon] Course Features</b> - For use on single course pages: features of a course.</li>
+				<li><b>[Cocoon] Course Info</b> - For use on single course pages: information about a course.</li>
+				<li><b>[Cocoon] Course Instructor</b> - For use on single course pages: information about a course instructor.</li>
+				<li><b>[Cocoon] Course Intro</b> - For use on single course pages: introduction to a course.</li>
+				<li><b>[Cocoon] Course Overview</b> - For use on single course pages: the overview of a course.</li>
+				<li><b>[Cocoon] Courses List</b> - For use in a sidebar region: a simple list of courses.</li>
+				<li><b>[Cocoon] Courses Slider</b> - A slider of chosen courses.</li>
+				<li><b>[Cocoon] Event Body</b> - For use on single event pages: the body text of an event.</li>
+				<li><b>[Cocoon] Event Contact</b> - For use on single event pages: the contact details for the event.</li>
+				<li><b>[Cocoon] Event Details</b> - For use on single event pages: the details of an event.</li>
+				<li><b>[Cocoon] Event Slider</b> - A slider of events.</li>
+				<li><b>[Cocoon] FAQs</b> - A list of expandable FAQs.</li>
+				<li><b>[Cocoon] Featured Blog Posts Slider</b> - A list of featured blog posts.</li>
+				<li><b>[Cocoon] Featured Event</b> - A featured event with text and an image.</li>
+				<li><b>[Cocoon] Featured Image</b> - A featured image.</li>
+				<li><b>[Cocoon] Featured Text</b> - Text which is featured.</li>
+				<li><b>[Cocoon] Features</b> - A four-column block of features and icons.</li>
+				<li><b>[Cocoon] Gallery</b> - A gallery of images with lightbox popups.</li>
+				<li><b>[Cocoon] Gallery Slider</b> - A sliding gallery of images.</li>
+				<li><b>[Cocoon] Global Search (sidebar)</b> - Edumy-styled sidebar search block.</li>
+				<li><b>[Cocoon] Global Search (navbar)</b> - Edumy-styled navbar search block.</li>
+				<li><b>[Cocoon] Hero 1</b> - The first hero style.</li>
+				<li><b>[Cocoon] Hero 2</b> - The second hero style.</li>
+				<li><b>[Cocoon] Hero 3 (with Search)</b> - The third hero style with a search box.</li>
+				<li><b>[Cocoon] Parallax</b> - A parallax section with text and an image.</li>
+				<li><b>[Cocoon] Parallax apps</b> - A parallax section with an image and links to your apps.</li>
+				<li><b>[Cocoon] Parallax Counters</b> - A parallax section with an image and four counters.</li>
+				<li><b>[Cocoon] Parallax White</b> - A white parallax section with text and an image.</li>
+				<li><b>[Cocoon] Partners</b> - A block of partner logos.</li>
+				<li><b>[Cocoon] Pills</b> - Four columned text with images.</li>
+				<li><b>[Cocoon] Programs</b> - Four columns and an image of your programs.</li>
+				<li><b>[Cocoon] Recent blog posts</b> - Recent blog posts in two columns (slider and static).</li>
+				<li><b>[Cocoon] Recent blog posts list</b> - For use in the sidebar regions: list of recent blog posts.</li>
+				<li><b>[Cocoon] Recent blog posts slider</b> - A large slider of recent blog posts.</li>
+				<li><b>[Cocoon] Related Courses</b> - For use on single course pages: related courses.</li>
+				<li><b>[Cocoon] Simple Counters</b> - Four counters on a white background.</li>
+				<li><b>[Cocoon] Slider style 1</b> - The first hero slider style.</li>
+				<li><b>[Cocoon] Slider style 2</b> - The second hero slider style.</li>
+				<li><b>[Cocoon] Slider style 3</b> - The third hero slider style.</li>
+				<li><b>[Cocoon] Slider style 4</b> - The fourth hero slider style.</li>
+				<li><b>[Cocoon] Subscribe</b> - For use with the Contact Form plugin: A newsletter susbcription block.</li>
+				<li><b>[Cocoon] Tablets</b> - Four responsive parallax tablets with icons.</li>
+				<li><b>[Cocoon] Testimonials slider</b> - A slider of user testimonials.</li>
+				<li><b>[Cocoon] Users</b> - For use in any main content region: A grid of selected users.</li>
+				<li><b>[Cocoon] Users Slider</b> - A slider of selected users.</li>
+				<li><b>[Cocoon] Users Slider Round</b> - A round slider of selected users.</li>
+			</ul>
+			<p>Each block is configurable independently and can be added to any Moodle page. You can also configure blocks to be displayed site-wide.</p>
+
+		</section>
+		<section id="main-menu">
+			<div class="page-header">
+				<h3>Main menu</h3>
+				<hr class="notop">
+			</div>
+			<p>To create a main menu, you should add items to the Moodle custom menu.</p>
+			<p>&rarr; Navigate to <b>Site administration > Appearance > Themes > Theme settings > Custom menu items</b> to configure your main menu.</p>
+			<p><img src="assets/images/pix/mm-1.png"></p>
+			<br>
+			<p>You can also customize the user navigation on the same page:</p>
+			<p><img src="assets/images/pix/mm-2.png"></p>
+			<h4>Multilingual Menu</h4>
+			<p>To enable the multilingual menu/language switcher, Navigate to <b>Site administration > Language > Language Settings > Display Language Menu</b>.</p>
+			<p>Toggling this option to 'Yes' will enable the presence of the multilingual language switcher on your site's frontend.</p>
+			<p>Ensure that you have also installed any associated Language Packs correctly, as the language switcher may not display if no additional Language Packs are installed.</p>
+		</section>
+		<section id="creating-content">
+			<div class="page-header">
+				<h3>Creating content</h3>
+				<hr class="notop">
+			</div>
+			<p>Edumy includes styling for many common areas in a typical Moodle installation.</p>
+			<p>However, it's also possible to create completely custom pages using the custom blocks shipped with Edumy. Please refer to <a href="#theme-structure">Theme structure</a> for reference.</p>
+			<p>To create a custom page, you should first enable the "Topics" section on the Moodle frontpage:</p>
+			<p>&rarr; Navigate to <b>Site administration > Front page > Front page settings</b> and enable "Include a topic section":</p>
+			<p><img src="assets/images/pix/cc-1.png"></p><br>
+			<p>&rarr; Navigate to your front page and click "Add an activity or resource" in the topics section:</p>
+			<p><img src="assets/images/pix/cc-2.png"></p><br>
+			<p>&rarr; Add a new "Page", under "Resources".</p>
+			<p>You're now able to create and assign custom blocks to your page. Please refer to <a href="#theme-structure">Theme structure</a> for a full list of available custom blocks.</p>
+		</section>
+		<section id="live-customizer">
+			<div class="page-header">
+				<h3>Cocoon Live Customizer</h3>
+				<hr class="notop">
+			</div>
+			<p>Edumy ships with the exclusive Cocoon Live Customizer.</p>
+			<p>Cocoon Live Customizer allows you to build content-rich pages using drag-and-drop real-time editing.</p>
+			<p>Not all custom blocks support Live Customizer, and these can be configured using the standard method.</p>
+			<p>To enable Live Customizer:</p>
+			<ol>
+				<li>First, turn editing on, either via the "Page Settings" button on the frontpage (in the bottom left corner), or click "Blocks Editing On" from the Site administration page.</li>
+				<li>Next, click "+Add a Block" from the Edumy user settings and navigation dropdown menu, beside the profile picture in the main menu bar.</li>
+				<li>Search for "Live Customizer" in the block search form, and you will find a list of blocks that currently support Cocoon Live Customizer.</li>
+				<li>Click the block you wish to add, and click "Select" to add it to the page.</li>
+				<li>You can now enter Live Customizer using the green button beside the new block.</li>
+			</ol>
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/utx-3UA-Jt8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+				style="width: 100%!important;height: 574px!important;"></iframe>
+			<p>Please refer to <a href="#theme-structure">Theme structure</a> for a full list of available custom blocks.</p>
+		</section>
+		<section id="formbuilder">
+			<div class="page-header">
+				<h3>Cocoon Form Builder</h3>
+				<hr class="notop">
+			</div>
+			<p>Edumy ships with the exclusive Cocoon Form Builder plugin for Moodle.</p>
+			<p>Cocoon Form Builder allows you to easily create webforms for your Moodle site using drag-and-drop.</p>
+			<p>To create forms with Cocoon Form Builder:</p>
+			<ol>
+				<li>First, navigate to <b>Site administration > Plugins > Local > Cocoon Form Builder</b>.</li>
+				<li>From this page, you will see a list of all existing forms, and the option to "Add a Form".</li>
+				<li>After saving your form, add the <b>[Cocoon] Form</b> block to any page on your Moodle site, and reference the desired form to display.</li>
+			</ol>
+			<h4>Creating Forms</h4>
+			<img src="assets/images/EF-P1bwQ.png"/>
+			<p>The modern interface of Cocoon Form Builder allows quick and easy creation of forms by drag-and-drop.</p>
+			<p>Simply drag fields from the right panel into the main content area in order to arrange your form.</p>
+			<img src="assets/images/stgldf39.png"/>
+		</section>
+		<section id="custom-block-types">
+			<div class="page-header">
+				<h3>Custom block types</h3>
+				<hr class="notop">
+			</div>
+			<p>The theme comes with an array of custom blocks for your convenience.</p>
+			<p>To create a custom block, you must first switch Block editing on.</p>
+			<p>&rarr; Navigate to <b>Site administration</b> and turn block editing on:</p>
+			<p><img src="assets/images/pix/cbt-1.png" style="width:800px"></p><br>
+			<p>You can now add blocks to any page using the "+ Add Block" link in the user navigation menu:</p>
+			<p><img src="assets/images/pix/cbt-2.png" style="width:300px"></p><br>
+			<p>Edumy's 50+ custom blocks are marked with [Cocoon]:</p>
+			<p><img src="assets/images/pix/cbt-3.png" style="width:300px"></p><br>
+			<br><br>
+			<h4>[Cocoon] About (Text 2 Columns)</h4>
+			<p><img src="assets/images/pix/cbt-4.png" style="width:300px"></p><br>
+			<h4>[Cocoon] About (Text with Image)</h4>
+			<p><img src="assets/images/pix/cbt-5.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Action Panels</h4>
+			<p><img src="assets/images/pix/cbt-6.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Boxes</h4>
+			<p><img src="assets/images/pix/cbt-bx.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Contact Form</h4>
+			<p><img src="assets/images/pix/cbt-7.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Courses Slider</h4>
+			<p><img src="assets/images/pix/cbt-coursesslider.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Categories</h4>
+			<p><img src="assets/images/pix/cbt-cc1.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Categories 2</h4>
+			<p><img src="assets/images/pix/cbt-cc2.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Categories 3</h4>
+			<p><img src="assets/images/pix/cbt-cc3.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Enrolment</h4>
+			<p><img src="assets/images/pix/cbt-8.1.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Enrolment (Custom)</h4>
+			<p><img src="assets/images/pix/cbt-8.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Features</h4>
+			<p><img src="assets/images/pix/cbt-9.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Info</h4>
+			<p><img src="assets/images/pix/cbt-10.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Instructor</h4>
+			<p><img src="assets/images/pix/cbt-11.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Intro</h4>
+			<p><img src="assets/images/pix/cbt-12.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Overview</h4>
+			<p><img src="assets/images/pix/cbt-13.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Course Categories List</h4>
+			<p><img src="assets/images/pix/cbt-14.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Courses Slider</h4>
+			<p><img src="assets/images/pix/cbt-15.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Event Body</h4>
+			<p><img src="assets/images/pix/cbt-16.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Event Contact</h4>
+			<p><img src="assets/images/pix/cbt-17.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Event Details</h4>
+			<p><img src="assets/images/pix/cbt-18.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Event Slider</h4>
+			<p><img src="assets/images/pix/cbt-19.png" style="width:300px"></p><br>
+			<h4>[Cocoon] FAQs</h4>
+			<p><img src="assets/images/pix/cbt-20.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Featured Blog Posts Slider</h4>
+			<p><img src="assets/images/pix/cbt-21.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Featured Courses</h4>
+			<p><img src="assets/images/pix/cbt-featcourses.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Featured Courses (Masonry)</h4>
+			<p><img src="assets/images/pix/cbt-featcoursesmasonry.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Featured Event</h4>
+			<p><img src="assets/images/pix/cbt-22.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Features</h4>
+			<p><img src="assets/images/pix/cbt-25.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Gallery</h4>
+			<p><img src="assets/images/pix/cbt-26.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Gallery Slider</h4>
+			<p><img src="assets/images/pix/cbt-27.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Global Search (sidebar)</h4>
+			<p><img src="assets/images/pix/cbt-28.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Global Search (navbar)</h4>
+			<p><img src="assets/images/pix/cbt-28a.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Hero 1</h4>
+			<p><img src="assets/images/pix/cbt-29.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Hero 2</h4>
+			<p><img src="assets/images/pix/cbt-30.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Hero 3 (with search)</h4>
+			<p><img src="assets/images/pix/cbt-31.png" style="width:300px"></p><br>
+			<h4>[Cocoon] My Profile Views</h4>
+			<p><img src="assets/images/pix/cbt-myviews.png" style="width:300px"></p><br>
+			<h4>[Cocoon] My News</h4>
+			<p><img src="assets/images/pix/cbt-mynews.png" style="width:300px"></p><br>
+			<h4>[Cocoon] My Orders</h4>
+			<p><img src="assets/images/pix/cbt-myorders.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Parallax</h4>
+			<p><img src="assets/images/pix/cbt-32.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Parallax Apps</h4>
+			<p><img src="assets/images/pix/cbt-33.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Parallax Counters</h4>
+			<p><img src="assets/images/pix/cbt-34.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Parallax Features</h4>
+			<p><img src="assets/images/pix/cbt-parafeat.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Parallax White</h4>
+			<p><img src="assets/images/pix/cbt-35.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Parallax Testimonials</h4>
+			<p><img src="assets/images/pix/cbt-paratest.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Partners</h4>
+			<p><img src="assets/images/pix/cbt-36.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Pills</h4>
+			<p><img src="assets/images/pix/cbt-37.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Price Tables</h4>
+			<p><img src="assets/images/pix/cbt-pt.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Programs</h4>
+			<p><img src="assets/images/pix/cbt-38.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Recent blog posts</h4>
+			<p><img src="assets/images/pix/cbt-39.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Recent blog posts list</h4>
+			<p><img src="assets/images/pix/cbt-40.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Recent blog posts slider</h4>
+			<p><img src="assets/images/pix/cbt-41.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Related Courses</h4>
+			<p><img src="assets/images/pix/cbt-42.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Services</h4>
+			<p><img src="assets/images/pix/cbt-services.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Simple Counters</h4>
+			<p><img src="assets/images/pix/cbt-43.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Slider style 1</h4>
+			<p><img src="assets/images/pix/cbt-44.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Slider style 2</h4>
+			<p><img src="assets/images/pix/cbt-45.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Slider style 3</h4>
+			<p><img src="assets/images/pix/cbt-46.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Slider style 4</h4>
+			<p><img src="assets/images/pix/cbt-47.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Slider style 5</h4>
+			<p><img src="assets/images/pix/cbt-slider5.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Steps</h4>
+			<p><img src="assets/images/pix/cbt-steps.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Subscribe</h4>
+			<p><img src="assets/images/pix/cbt-48.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Tablets</h4>
+			<p><img src="assets/images/pix/cbt-49.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Testimonials slider</h4>
+			<p><img src="assets/images/pix/cbt-50.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Users</h4>
+			<p><img src="assets/images/pix/cbt-51.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Users Slider</h4>
+			<p><img src="assets/images/pix/cbt-52.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Users Slider (Large)</h4>
+			<p><img src="assets/images/pix/cbt-ouragents.png" style="width:300px"></p><br>
+			<h4>[Cocoon] Users Slider (Round)</h4>
+			<p><img src="assets/images/pix/cbt-53.png" style="width:300px"></p><br>
+		</section>
+		<section id="course-payment-setup">
+			<div class="page-header">
+				<h3>Course payment setup</h3>
+				<hr class="notop">
+			</div>
+			<p>Edumy supports paid course enrollment using Moodle's <b>PayPal Enrolment</b> method.</p>
+			<p>We'll guide you on how to setup and configure PayPal Enrolment on your Edumy Moodle site.</p>
+			<h4><b>1.</b> Enable the PayPal Enrolment method</h4>
+			<p>First, you must enable PayPal Enrolment. You'll also have the opportunity to configure site-wide settings for PayPal Enrolment.</p>
+			<p>&rarr; Navigate to <b>Site administration > Plugins > Enrolments > Manage enrol plugins</b> and enable PayPal Enrolment (by clicking the eye icon):</p>
+			<p><img src="assets/images/pix/pm-1.png" style="width:800px"></p><br>
+			<h4><b>2.</b> Configure site-wide PayPal settings</h4>
+			<p>Now you can configure site-wide settings for PayPal. This is important, as you want your payments sent to the right place.</p>
+			<p>To configure site-wide settings for PayPal on your Moodle site, click the "Settings" link beside "PayPal".</p>
+			<p><img src="assets/images/pix/pm-2.png" style="width:800px"></p><br>
+			<h4><b>3.</b> Important PayPal Settings</h4>
+			<p>All configuration options for PayPal are important, but the key ones are:</p>
+			<ol>
+				<li>PayPal Business Email (use the email address linked to your PayPal Business Account).</li>
+				<li>Set "Allow PayPal Enrolments" to <b>Yes</b>.</li>
+				<li>Set the default "Enrol cost" and "Currency" for your courses.</li>
+			</ol>
+			<p><img src="assets/images/pix/pm-3.png" style="width:800px"></p><br>
+			<h4><b>4.</b> Enable PayPal Enrolment for each paid course</h4>
+			<p>To allow PayPal enrolments for specific courses, follow these steps:</p>
+			<ol>
+				<li>Navigate to the "Participants" page for a given course<br><br>
+					<img src="assets/images/pix/pm-4.png" style="width:250px"><br><br><br>
+				</li>
+				<li> From the course settings menu, click "Enrolment methods"
+					<br><br>
+					<img src="assets/images/pix/pm-5.png" style="width:250px"><br><br><br>
+				</li>
+				<li> If PayPal is not already listed as an enrolment method, select "PayPal" from the "Add method" dropdown on the page:
+					<br><br>
+					<img src="assets/images/pix/pm-6.png" style="width:250px"><br><br><br>
+				</li>
+				<li> You can also adjust the PayPal settings for the specific course, as shown below:
+					<br><br>
+					<img src="assets/images/pix/pm-7.png" style="width:800px"><br><br><br>
+				</li>
+				<li> Lastly, add the <b>[Cocoon] Course Enrolment</b> block to the course main page, so that users will be shown the enrolment details and purchase link, as shown below.<br><br>
+
+					<img src="assets/images/pix/pm-8.png" style="width:250px"><br><br><br>
+				</li>
+				<li> If all of your courses require payment, we recommend adding the block <b>once</b>, and configuring it to display on "any type of course main page". This prevents you from having to add the block to every course.<br><br>
+					<img src="assets/images/pix/pm-9.png" style="width:250px"><br><br><br>
+				</li>
+				<br><br>
+
+			</ol>
+
+		</section>
+		<section id="further-customization">
+			<div class="page-header">
+				<h3>Further Customization</h3>
+				<hr class="notop">
+			</div>
+			<p>Cocoon Live Customizer provides extensive support for the customization of certain custom blocks.</p>
+			<p>However, you may wish to further customize Edumy theme styles or custom blocks with custom CSS changes.</p>
+			<p>In the Edumy theme settings panel, various fields are provided for custom CSS and JavaScript code.</p>
+			<img src="assets/images/pix/fc-0.png" style="width:500px"><br><br><br>
+			<p>The fields provided via the Edumy theme settings panel (Site administration > Appearance > Edumy > Advanced) are:</p>
+			<ul>
+				<li><b>Custom CSS</b> - styles applied to the Edumy frontend theme</li>
+				<li><b>Custom CSS Dashboard</b> - styles applied to the Edumy dashboard and focus themes</li>
+				<li><b>Custom JavaScript</b> - JavaScript applied to the Edumy frontend theme</li>
+				<li><b>Custom JavaScript Dashboard</b> - JavaScript applied to the Edumy dashboard and focus themes</li>
+			</ul>
+			<p>When using custom CSS via these fields, please do not include the style tag, as this is provided as a wrapper by default.</p>
+			<p>When using custom JavaScript via these fields, please do not include the script tag, as this is provided as a wrapper by default.</p>
+
+			<p>If you prefer to include your custom CSS files via a hard-coded file, rather than via the Theme Settings, you can edit the <i>custom.css</i> file located at: <b>/theme/edumy/style/custom.css</b>.</p>
+			<div class="alert alert-info"><b>Please note</b> that your custom.css file may be overwritten when updating Edumy theme. For this purpose, we recommend backing up your custom.css file <i>before</i> updating Edumy theme, in case you need to
+				restore it after the update.</div>
+
+
+
+
+
+
+			<h4>Bootstrap Buttons:</h4>
+
+			<p>The HTML codes below can be used to add styled Bootstrap buttons anywhere on your Moodle site.</p>
+			<img src="assets/images/pix/sc-1.png" style="width:500px"><br>
+			<pre>
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-primary&quot;&gt;Primary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-secondary&quot;&gt;Secondary&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-success&quot;&gt;Success&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-danger&quot;&gt;Danger&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-warning&quot;&gt;Warning&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-info&quot;&gt;Info&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-light&quot;&gt;Light&lt;/a&gt;
+</pre>
+			<h4>Edumy Buttons:</h4>
+			<p>The HTML codes below can be used to add styled Edumy buttons anywhere on your Moodle site.</p>
+			<img src="assets/images/pix/sc-2.png" style="width:500px"><br>
+			<pre>
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-thm&quot; href=&quot;#&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-dark&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-gray&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-transparent&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-green&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-lg btn-white&quot;&gt;Button&lt;/a&gt;
+</pre>
+
+			<h4>Edumy Shadow Buttons:</h4>
+			<p>The HTML codes below can be used to add styled Edumy Shadow buttons anywhere on your Moodle site.</p>
+			<img src="assets/images/pix/sc-3.png" style="width:500px"><br>
+			<pre>
+&lt;a href=&quot;#&quot; class=&quot;btn btn-thm white&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn dbxshad btn-thm rounded&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn dbxshad btn-dark rounded&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn dbxshad btn-thm2 rounded&quot;&gt;Button&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn dbxshad btn-thm3 rounded&quot;&gt;Button&lt;/a&gt;
+</pre>
+
+
+		</section>
+
+		<section id="changelog">
+			<div class="page-header">
+				<h3>Changelog</h3>
+				<hr class="notop">
+			</div>
+			<p>See <a href="https://createdbycocoon.com/moodle-themes/edumy" target="_blank">https://createdbycocoon.com/moodle-themes/edumy</a> for full changelog.</p>
+			<h4>Version 2.7.0 (27 October 2021)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous bug fixes and improvements.
+</pre>
+<h4>Version 2.6.0 (26 July 2021)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous updates & improvements, new blocks, introducing Cocoon Form Builder.
+</pre>
+<h4>Version 2.5.1 (17 February 2021)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous updates & improvements.
+</pre>
+			<h4>Version 2.5.0 (01 February 2021)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Solidify updates into Edumy 2.5.0
+</pre>
+			<h4>Version 2.3.1 (01 February 2021)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor updates and improvements to Edumy theme.
+</pre>
+			<h4>Version 2.3.0 (30 January 2021)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Extensive updates & improvements to Edumy theme. All blocks updated. 17 new blocks.
+</pre>
+			<h4>Version 2.2.1 (25 November 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Updates to Cocoon Live Customizer
+</pre>
+			<h4>Version 2.2.0 (12 November 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Updated for Moodle 3.10
+</pre>
+			<h4>Version 2.1.6 - 2.1.7 (10 November 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous fixes and improvements.
+</pre>
+			<h4>Version 2.1.5 (29 September 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous fixes, updates & improvements.
+</pre>
+			<h4>Version 2.1.4 (08 September 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous fixes.
+</pre>
+			<h4>Version 2.1.3 (02 September 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous fixes.
+</pre>
+			<h4>Version 2.1.2 (29 August 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous fixes.
+</pre>
+			<h4>Version 2.1.1 (18 August 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor fixes and improvements. Various block updates.
+</pre>
+			<h4>Version 2.1.0 (15 August 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Various updates, new features, and performance enhancements.
+</pre>
+			<h4>Version 2.0.7 (04 August 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous fixes and improvements
+</pre>
+			<h4>Version 2.0.6 (29 July 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Fixes and updates for various blocks
+</pre>
+			<h4>Version 2.0.5 (20 July 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Introducing Moodle 3.7 support for Cocoon Live Customizer
+</pre>
+			<h4>Version 2.0.4 (16 July 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor fixes
+</pre>
+			<h4>Version 2.0.3 (15 July 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor fixes
+</pre>
+			<h4>Version 2.0.2 (12 July 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor updates to Cocoon course handler
+</pre>
+			<h4>Version 2.0.1 (12 July 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New slider settings, autoplay. Live Customizer updates. Miscellaneous fixes and improvements. RTL improvements. Addition of custom.css file.
+</pre>
+			<h4>Version 2.0.0 (06 July 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Edumy v2. New blocks, new headers, new sliders, new footers, and more.
+</pre>
+			<h4>Version 1.6.2 (26 June 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Improvements and fixes to Live Customizer. Updated blocks. New blocks, new sliders, new headers, footers and more. RTL improvements.
+</pre>
+			<h4>Version 1.6.1 (22 June 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Updates to Live Customizer and blocks.
+</pre>
+			<h4>Version 1.6.0 (20 June 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Introducing Cocoon Live Customizer for Moodle 3.8 & 3.9 + new settings, minor bug fixes, Moodle 3.9 improvements, and more.
+</pre>
+			<h4>Version 1.5.0 (15 June 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Moodle 3.9 support
+</pre>
+			<h4>Version 1.4.8 (15 June 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor bug fixes, updates, new theme features, support for all paid enrolment methods & more
+</pre>
+			<h4>Version 1.4.7 (09 June 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Slider 5 translations
+</pre>
+			<pre class="prettyprint lang-plain linenums">
+Introducing Cocoon Content Creator for Moodle
+</pre>
+			<h4>Version 1.4.5 (06 June 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Introducing RTL
+</pre>
+			<h4>Version 1.4.4 (04 June 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor fixes + new blocks
+</pre>
+			<h4>Version 1.4.3 (29 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New breadcrumb settings
+</pre>
+			<h4>Version 1.4.2 (29 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor fixes and improvements
+</pre>
+			<h4>Version 1.4.1 (25 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Several new block additions
+</pre>
+			<h4>Version 1.4.0 (23 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New updates and features
+</pre>
+			<h4>Version 1.3.9 (17 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New settings for blocks & Theme Edumy
+</pre>
+			<h4>Version 1.3.8 (14 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New theme and block settings
+</pre>
+			<h4>Version 1.3.7 (08 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor fixes
+</pre>
+			<h4>Version 1.3.6 (08 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New features
+</pre>
+			<h4>Version 1.3.5 (04 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New theme features and enhancements
+</pre>
+			<h4>Version 1.3.4 (03 May 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor updates
+</pre>
+			<h4>Version 1.3.3 (30 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New theme settings added & 1200+ new icons & new block settings
+</pre>
+			<h4>Version 1.3.2 (23 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+New theme settings added
+</pre>
+			<h4>Version 1.3.1 (22 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor update with new settings additions and new dashboard features
+</pre>
+			<h4>Version 1.3.0 (19 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Major Release - All sites running Moodle 3.8 are recommended to upgrade.
+</pre>
+			<h4>Version 1.2.14 (16 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor updates
+</pre>
+			<h4>Version 1.2.13 (15 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Backwards compatibility for plugin update page
+</pre>
+			<h4>Version 1.2.12 (14 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous enhancements and improvements
+</pre>
+			<h4>Version 1.2.11 (12 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor improvements
+</pre>
+			<h4>Version 1.2.10 (11 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor improvements
+</pre>
+			<h4>Version 1.2.9 (10 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous fixes and improvements, new theme settings, reCAPTCHA and more.
+</pre>
+			<h4>Version 1.2.8 (09 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Miscellaneous improvements
+</pre>
+			<h4>Version 1.2.7 (07 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor fixes
+</pre>
+			<h4>Version 1.2.6 (06 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor improvements and settings additions.
+</pre>
+			<h4>Version 1.2.5 (05 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor updates.
+</pre>
+			<h4>Version 1.2.4 (05 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor additions and updates.
+</pre>
+			<h4>Version 1.2.3 (02 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Addition of fonts options in Theme Settings.
+</pre>
+			<h4>Version 1.2.2 (02 April 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Extensive updates and improvements to M3.8 versions of theme and blocks.
+</pre>
+			<h4>Version 1.2.1 (29 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Extensive updates to M3.8 versions of theme and blocks.
+</pre>
+			<h4>Version 1.2.0 (22 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Extensive updates to M3.8 versions of theme and blocks.
+</pre>
+			<h4>Version 1.1.11 (19 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Fix to header logotype visibility settings: M3.8 only
+</pre>
+			<h4>Version 1.1.10 (17 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor theme updates - fixed login page styles
+</pre>
+			<h4>Version 1.1.9 (17 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor theme & block updates
+</pre>
+			<h4>Version 1.1.8 (16 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Updates to all footers, updates to custom blocks.
+</pre>
+			<h4>Version 1.1.7 (14 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Extensive theme settings updates - PURGE MOODLE CACHES BEFORE & AFTER UPGRADING.
+</pre>
+			<h4>Version 1.1.6 (12 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Minor updates for course category displays
+</pre>
+			<h4>Version 1.1.5 (12 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+M3.8 & M3.7 - update to cocoon_course_categories block
+</pre>
+			<h4>Version 1.1.4 (10 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+M3.8 & M3.7 - update to cocoon_course_intro block
+</pre>
+			<h4>Version 1.1.3 (10 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+M3.8 & M3.7 - extensive block adjustments, filter_multilang2 plugin support for the theme & all blocks
+</pre>
+			<h4>Version 1.1.2 (04 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+M3.8 & M3.7 - adjustments to main menu bar
+</pre>
+			<h4>Version 1.1.1 (03 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+M3.8 & M3.7 - fixes to course categories index page
+</pre>
+			<h4>Version 1.1.0 (02 March 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Updates to theme files for Moodle 3.8 and Moodle 3.7
+</pre>
+			<h4>Version 1.0.9 (28 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Updates to theme and custom blocks.
+</pre>
+			<h4>Version 1.0.8 (28 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Enhancements and improvements for participants pages
+</pre>
+			<h4>Version 1.0.7 (27 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Enhancements for frontend course management, page header adjustments, accordion improvements
+</pre>
+			<h4>Version 1.0.6 (26 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Improvements to add activity chooser UI
+</pre>
+			<h4>Version 1.0.5 (25 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Improvements to courses: forums and weekly
+</pre>
+			<h4>Version 1.0.4 (24 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Updates to several theme files.
+</pre>
+			<h4>Version 1.0.3 (23 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Changes to several blocks and theme files.
+</pre>
+			<h4>Version 1.0.2 (22 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Changes to several blocks and theme files.
+New Global search (navbar) block.
+</pre>
+			<h4>Version 1.0.1 (20 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Changes to several blocks and theme files.
+</pre>
+			<h4>Version 1.0.0 (18 February 2020)</h4>
+			<pre class="prettyprint lang-plain linenums">
+Initial release
+</pre>
+		</section>
+		<section id="further-support">
+			<div class="page-header">
+				<h3>Further support</h3>
+				<hr>
+			</div>
+			<p>If you are experiencing trouble, or otherwise have a question or concern beyond the scope of this help file, you may reach us via any of the following means.</p>
+			<ul>
+				<li><b>support ticket:</b> <a target="_blank" href="https://createdbycocoon.com/get-support">createdbycocoon.com/get-support</a></li>
+				<li><b>knowledgebase:</b> <a target="_blank" href="https://createdbycocoon.com/knowledge">createdbycocoon.com/knowledge</a></li>
+			</ul>
+			<p>We endeavour to respond to all enquiries within 24 hours, Monday to Sunday.</p>
+			<hr>
+			<h4>Statement of Support</h4>
+			<p>We will always do our best to leave you satisfied after any support correspondence. We shall provide support for reasonable questions pertaining to the installation and setup of the theme, queries regarding use of the theme's features, and
+				reports of bugs or technical issues with the product. We aim to respond to all enquiries in a timely fashion, often within 24 hours, Monday to Sunday. We ask that you are patient and polite in exchange for this generous service. Regrettably,
+				we are unable to provide modification or customization services free of charge.</p>
+			<hr>
+			<h4>FAQ</h4>
+			<p><b>Q. Do you offer installation services?</b><br>
+				<b>A.</b> Yep! Get in touch at <a href="https://createdbycocoon.com/contact" target="_blank">https://createdbycocoon.com/contact</a></p>
+			<p><b>Q. What if I need customization services? ... do you offer customization services?</b><br>
+				<b>A.</b> Yep! Get in touch at <a href="https://createdbycocoon.com/contact" target="_blank">https://createdbycocoon.com/contact</a></p>
+			<p><b>Q. Can I pay you for a custom project? What is your hourly rate?</b><br>
+				<b>A.</b> Yep! Get in touch at <a href="https://createdbycocoon.com/contact" target="_blank">https://createdbycocoon.com/contact</a></p>
+
+
+		</section>
+
+	</div>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+		ga('create', 'UA-61019949-7', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+
+</html>
